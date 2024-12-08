@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Add Swap Space
 echo "Adding swap space..."
