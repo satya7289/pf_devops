@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Add Swap Space
+SWAP_SIZE="1G"  # Swap size of 1GB
 echo "Adding swap space..."
 sudo fallocate -l $SWAP_SIZE /swapfile
 sudo chmod 600 /swapfile

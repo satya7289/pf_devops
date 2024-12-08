@@ -1,3 +1,4 @@
+version: '3'
 services:
   fe:
     image: 815345612430.dkr.ecr.ap-south-1.amazonaws.com/punumflutes/fe:latest
