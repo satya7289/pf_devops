@@ -4,6 +4,7 @@ services:
     image: 815345612430.dkr.ecr.ap-south-1.amazonaws.com/punumflutes/fe:latest
     ports:
       - '3000:3000'
+    restart: unless-stopped
     environment:
       - NODE_ENV=production
       - SECRET_TOKEN=secrettoken
@@ -17,6 +18,7 @@ services:
     ports:
       - '8000:8000'
     env_file: ".env"
+    restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
