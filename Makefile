@@ -10,4 +10,5 @@ pull_image:ecr_login
 	docker pull $(ECR)/$(DOCKER_IMAGE)
 
 restart:
-	docker-compose up -d --force-recreate --remove-orphans && docker image prune
+	docker-compose up -d --force-recreate --remove-orphans && docker image prune	
+
