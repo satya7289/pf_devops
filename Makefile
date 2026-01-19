@@ -12,3 +12,5 @@ pull_image:ecr_login
 restart:
 	docker-compose up -d --force-recreate --remove-orphans && docker image prune	
 
+pull_restart: pull_image restart
+	@echo "Pulled latest image and restarted the containers"
